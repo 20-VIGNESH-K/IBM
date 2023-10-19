@@ -52,8 +52,8 @@ func main() {
 		defer handlePanic()
 		len, err := mq.GetMessage(qObj_read, buffer)
 		ErrorMessage(err)
-		fmt.Println("msg length : ", len)
-		fmt.Println("msg : ", string(buffer))
 		fmt.Println("Message received successfully!")
+		fmt.Println("msg length : ", len)
+		fmt.Println("msg : ", string(buffer))	
 	}
 }
